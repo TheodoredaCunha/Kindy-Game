@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Town</name>
+    <events>
+        <variable constant="0" name="chosen" sid="709721481050186" static="0" type="text">&quot;Town&quot;</variable>
+        <event-block sid="639208046290525">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="179000756028476" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">FireStationBuilding</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="605884610542616" type="button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="945918363496360" type="button_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="683142801769944" type="button_text">
+                    <param id="0" name="Text">&quot;Play Firefighter Game&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="911894442526617" type="x">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="650192980543959" type="System">
+                    <param id="0" name="Variable">chosen</param>
+                    <param id="1" name="Value">&quot;Firefighter_Story&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="568880527105216">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="841205441322183" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="492714310805517" type="button">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="108275219877304" type="button_text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="365569531647821" type="x">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="418509371317884" type="x" />
+            </actions>
+        </event-block>
+        <event-block sid="265312723970717">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="762614500742925" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">button</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="151937745699040" type="button" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="263495518665266" type="System">
+                    <param id="0" name="Layout">chosen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="159708745776969">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="681705620999457" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="309808708525607" type="button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="311622668983876" type="button_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="571242942672280" type="button_text">
+                    <param id="0" name="Text">&quot;Play Chef Game&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="755028660352134" type="x">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="495745321014979" type="button_text">
+                    <param id="0" name="Y">230</param>
+                </action>
+                <action id="-9" name="Set value" sid="834777645965885" type="System">
+                    <param id="0" name="Variable">chosen</param>
+                    <param id="1" name="Value">&quot;Chef_Story&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="283784758276929">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="312369443865864" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">x</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="729405645361337" type="button">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="340995251297787" type="button_text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="716483790759049" type="x">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

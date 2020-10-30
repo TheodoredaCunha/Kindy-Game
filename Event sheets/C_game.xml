@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>C_game</name>
+    <events>
+        <variable constant="0" name="lives_chef" sid="747813514460805" static="0" type="number">5</variable>
+        <variable constant="0" name="counter" sid="150696866273623" static="0" type="number">0</variable>
+        <variable constant="0" name="playing" sid="142049891792128" static="0" type="number">1</variable>
+        <event-block sid="328652856468830">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="296579045697494" type="lettuce">
+                    <param id="0" name="Object">burger</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="627404128017745" type="lettuce">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="599070912644142" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="195563969064403">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="712495227760453" type="lettuce">
+                    <param id="0" name="Object">lettuce</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="506101029364110" type="lettuce">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="714030275129845" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="535873354681730">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="659799599050071" type="lettuce">
+                    <param id="0" name="Object">patty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="550521015272644" type="lettuce">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="139710851537211" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="835140175302256">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="982954480768994" type="lettuce">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="276320061892798" type="lettuce">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="883019708142420" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="566396093003592" type="System">
+                    <param id="0" name="Variable">lives_chef</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="641120080771172">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="753938696428559" type="patty">
+                    <param id="0" name="Object">burger</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="978955919716503" type="patty">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="727459775604886" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884651847867244">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="986665193064354" type="patty">
+                    <param id="0" name="Object">lettuce</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="178493530426477" type="patty">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="434872455245752" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="415515762322846">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="267681874294376" type="patty">
+                    <param id="0" name="Object">patty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="188550861925294" type="patty">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="224652344818842" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674103811255807">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="639528301727655" type="patty">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="857009450457628" type="patty">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="422057706386621" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="795248392650976" type="System">
+                    <param id="0" name="Variable">lives_chef</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="747735057468868">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="264643834026136" type="System">
+                    <param id="0" name="Variable">playing</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="375172319772254" type="burger">
+                    <param id="0" name="X">Mouse.X</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="927919524261579">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="100443095174692" type="System">
+                            <param id="0" name="First value">counter % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="362552603618771" type="lettuce">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">lettuce.speed</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="361877278695433">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Compare two values" sid="539090610975036" type="System">
+                            <param id="0" name="First value">counter % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="288066419622036" type="patty">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">patty.speed</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="650508216260369">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="795998954527399" type="lettuce">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="435865486573678" type="lettuce">
+                    <param id="0" name="X">Mouse.X</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="165595811640899">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="855383368934549" type="patty">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="785121014334154" type="patty">
+                    <param id="0" name="X">Mouse.X</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="516931406238657">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="969090377690873" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="240426182408027">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="166816575234676" type="System">
+                            <param id="0" name="First value">counter % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="677159686113078" type="System">
+                            <param id="0" name="Object to create">lettuce</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(0, 500)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="190977901724981">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="458002442668008" type="System">
+                            <param id="0" name="First value">counter % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="779246596742474" type="System">
+                            <param id="0" name="Object to create">patty</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(0, 500)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="137291832648591">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="352168175243115" type="System">
+                    <param id="0" name="Variable">lives_chef</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="788898985332242" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

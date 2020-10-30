@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>C_story</name>
+    <events>
+        <event-block sid="564382777266640">
+            <conditions />
+            <actions />
+        </event-block>
+        <variable constant="0" name="dialogue2" sid="911927055127475" static="0" type="number">0</variable>
+        <event-block sid="383692605096951">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="565181448818185" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="721915376215641" type="Chef_Dialogue">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="907038745483415" type="speech_bubble_chef">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="981776295142788">
+            <conditions>
+                <condition id="0" name="On click" sid="170072376486075" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="991502558259840" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191615745344338">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="692101799785159" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="632902456883324" type="Chef_Dialogue">
+                    <param id="0" name="Text">&quot;I am a chef&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="274235538381368" type="speech_bubble_chef">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="533139600352545" type="Chef_Dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="294006436421521">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="988865763705609" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="720955641545887" type="speech_bubble_chef">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="377198821107880" type="Chef_Dialogue">
+                    <param id="0" name="Text">&quot;I work in a restaurant&quot;</param>
+                </action>
+                <action id="3" name="Set font size" sid="754804522993860" type="Chef_Dialogue">
+                    <param id="0" name="Size (pt)">30</param>
+                </action>
+                <action id="-15" name="Set visible" sid="880581902546281" type="Chef_Dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455478587856021">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="711769108864725" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="122758533430385" type="speech_bubble_chef">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="696192405262629" type="Chef_Dialogue">
+                    <param id="0" name="Text">&quot;I cook food&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="701194476317693" type="Chef_Dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122666641527850">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="306894025080879" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="201835835454542" type="speech_bubble_chef">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="417276768522806" type="Chef_Dialogue">
+                    <param id="0" name="Text">&quot;Can you help me?&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="424316540413349" type="Chef_Dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="820380199914373">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="453723413030378" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="901265473026819" type="System">
+                    <param id="0" name="Layout">&quot;Chef_game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

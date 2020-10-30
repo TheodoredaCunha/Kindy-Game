@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FF_game</name>
+    <events>
+        <event-block sid="733867425801471">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="645411651861947" type="fire">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="305563748141091" type="fire">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="765767906163265">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="212387826310654" type="cursor">
+                    <param id="0" name="Comparison">1</param>
+                    <param id="1" name="X co-ordinate">Mouse.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="820731003392560" type="cursor">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="941934029150148" type="cursor">
+                    <param id="0" name="X">Mouse.X</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="892108322329172">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="102051542289819" type="cursor">
+                    <param id="0" name="Comparison">1</param>
+                    <param id="1" name="Y co-ordinate">Mouse.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="427158299069582" type="cursor">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="129259258955602" type="cursor">
+                    <param id="0" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="568026981247820">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="508258807458071" type="Mouse">
+                    <param id="0" name="Object">fire</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="699633798467007" type="cursor">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="481996766866526">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="318893387166871" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">fire</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="622135616074764" type="fire" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="802029009461968" type="fire">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-14" name="Toggle boolean" sid="328045643533527" type="fire">
+                    <param id="0" name="Instance variable">dead</param>
+                </action>
+                <action id="-11" name="Add to" sid="175434255017206" type="cursor">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="529255842616316" type="Scores">
+                    <param id="0" name="Text">cursor.Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="123626278718053">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="990260951771662" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="836668922711808" type="fire">
+                    <param id="0" name="Instance variable">random</param>
+                    <param id="1" name="Value">random(0, 10)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="874507686873016">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="803592781981377" type="fire">
+                            <param id="0" name="Instance variable">dead</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="987358863808246" type="fire">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="696550152163232" type="fire">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="492377127195627" type="fire">
+                            <param id="0" name="Instance variable">dead</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="817566455651405">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="845080471534197" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="793337020912504" type="fire">
+                    <param id="0" name="Instance variable">random</param>
+                    <param id="1" name="Value">random(0,10)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="953767216393474">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="625642734632887" type="fire">
+                            <param id="0" name="Instance variable">dead</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="865660924373841" type="fire">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="523198038294392" type="fire">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="847478344403271" type="fire">
+                            <param id="0" name="Instance variable">dead</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="684231449821376">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="837290264073183" type="fire">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="761670867367973" type="fire">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="343450093789335">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="223401849934711" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="701285041119904" type="timer">
+                    <param id="0" name="Instance variable">time_left</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="365380577877241" type="timer">
+                    <param id="0" name="Text">timer.time_left</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="865722982862229">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="824331555360639" type="timer">
+                            <param id="0" name="Instance variable">time_left</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="258950335420936" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="422947813200485" type="congrats">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="404685318266161" type="congratulations_text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Append text" sid="490766047406772" type="final_score">
+                            <param id="0" name="Text">cursor.Score</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="350892526957481" type="final_score">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="139584771373414" type="button_home">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="637017783676493" type="Go_Back">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="999989900873796">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="380803070133701" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">button_home</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="887529642601343" type="System">
+                                    <param id="0" name="Layout">Town</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FF_story</name>
+    <events>
+        <variable constant="0" name="dialogue" sid="530092296712540" static="0" type="number">0</variable>
+        <event-block sid="497596787278651">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="955095701699148" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="419319144772758" type="speech_bubble">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="314075283384080" type="dialogue">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="850178884887635">
+            <conditions>
+                <condition id="0" name="On click" sid="880941452427340" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="172328436876875" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="531363130726629">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="246516607121570" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="216681370550519" type="speech_bubble">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="548986306559031" type="dialogue">
+                    <param id="0" name="Text">&quot;I am a firefighter&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="818507531964742" type="dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="517942464569671">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="209217943514913" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="716532924477856" type="dialogue">
+                    <param id="0" name="Text">&quot;I work in a fire station&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558805645019305">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="931626459666703" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="759901670188737" type="dialogue">
+                    <param id="0" name="Text">&quot;I will put out any fire&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="391395829766777">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="424007771399369" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="425516496148557" type="dialogue">
+                    <param id="0" name="Size (pt)">30</param>
+                </action>
+                <action id="0" name="Set text" sid="761051595025712" type="dialogue">
+                    <param id="0" name="Text">&quot;Will you help me?&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="816737134108280">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="670097300937095" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="854951846224711" type="System">
+                    <param id="0" name="Layout">&quot;Firefighter_game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
