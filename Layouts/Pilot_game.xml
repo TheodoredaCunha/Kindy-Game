@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Chef_game</name>
-    <sid>765308653935356</sid>
-    <event-sheet>C_game</event-sheet>
+    <name>Pilot_game</name>
+    <sid>427684495574207</sid>
+    <event-sheet>Pi_game</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="377366304341708">
+        <layer name="Layer 0" sid="280764604149402">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,27 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="chef_game_background" uid="49">
+                <instance type="pilot_game_sky" uid="87">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-24</x>
+                        <y>-24</y>
+                        <z>0</z>
+                        <width>967</width>
+                        <height>524</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="plane" uid="88">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,11 +59,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>428</x>
-                        <y>257</y>
+                        <x>140</x>
+                        <y>210</y>
                         <z>0</z>
-                        <width>854</width>
-                        <height>513</height>
+                        <width>304</width>
+                        <height>248</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -51,7 +71,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="burger" uid="50">
+                <instance type="cloud1" uid="89">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -61,84 +81,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>132</x>
-                        <y>438</y>
+                        <x>941</x>
+                        <y>333</y>
                         <z>0</z>
-                        <width>371</width>
-                        <height>356</height>
-                        <depth>0</depth>
-                        <hotspotX>0.510416687</hotspotX>
-                        <hotspotY>0.663888872</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="lettuce" uid="52">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <speed>5</speed>
-                        <falling>1</falling>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1082</x>
-                        <y>230</y>
-                        <z>0</z>
-                        <width>426</width>
-                        <height>323</height>
-                        <depth>0</depth>
-                        <hotspotX>0.443749994</hotspotX>
-                        <hotspotY>0.30138889</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="patty" uid="53">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <speed>5</speed>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1474</x>
-                        <y>257</y>
-                        <z>0</z>
-                        <width>717</width>
-                        <height>598</height>
-                        <depth>0</depth>
-                        <hotspotX>0.529166639</hotspotX>
-                        <hotspotY>0.44305557</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="dead_zone" uid="54">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>436</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>878</width>
-                        <height>250</height>
+                        <width>356</width>
+                        <height>261</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -146,24 +93,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TopBun" uid="75">
+                <instance type="cloud2" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <bun_speed>5</bun_speed>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>378</x>
-                        <y>-29</y>
+                        <x>1051</x>
+                        <y>186</y>
                         <z>0</z>
-                        <width>741</width>
-                        <height>598</height>
+                        <width>451</width>
+                        <height>292</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -171,11 +115,131 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="chef_lives_left" uid="76">
+                <instance type="cloud_dead_zone" uid="91">
                     <properties>
-                        <text>5</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Lato,-64,700,0</font>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-170</x>
+                        <y>226</y>
+                        <z>0</z>
+                        <width>81</width>
+                        <height>686</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cloud_dead_zone" uid="92">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>507</x>
+                        <y>692</y>
+                        <z>0</z>
+                        <width>81</width>
+                        <height>1209</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>1.573479772</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pilot_lives_text" uid="93">
+                    <properties>
+                        <text>3</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Lato,-37.3333,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>370.618652344</x>
+                        <y>147</y>
+                        <z>0</z>
+                        <width>153.381378174</width>
+                        <height>59</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pilot_menu" uid="94">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>450</x>
+                        <y>231</y>
+                        <z>0</z>
+                        <width>404</width>
+                        <height>404</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pilot_score_text" uid="95">
+                    <properties>
+                        <text>0</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Lato,-48,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>391</x>
+                        <y>92</y>
+                        <z>0</z>
+                        <width>114</width>
+                        <height>78</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pilot_goodJob_text" uid="96">
+                    <properties>
+                        <text>Good Job! Your score is:</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Lato,-32,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -186,11 +250,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>413</x>
-                        <y>58</y>
+                        <x>279</x>
+                        <y>40</y>
                         <z>0</z>
-                        <width>48</width>
-                        <height>87</height>
+                        <width>364</width>
+                        <height>46</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -198,7 +262,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="chef_done_menu" uid="78">
+                <instance type="pilot_end_button" uid="97">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -208,11 +272,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>433</x>
-                        <y>254</y>
+                        <x>460</x>
+                        <y>318</y>
                         <z>0</z>
-                        <width>375</width>
-                        <height>388</height>
+                        <width>456</width>
+                        <height>348</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -220,10 +284,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="burgers_made_text" uid="77">
+                <instance type="pilot_back2town" uid="98">
                     <properties>
-                        <text>0</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <text>Back to Town</text>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Lato,-37.3333,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -235,114 +299,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>140</y>
+                        <x>344</x>
+                        <y>279</y>
                         <z>0</z>
-                        <width>86</width>
-                        <height>53</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="good_job_Text" uid="79">
-                    <properties>
-                        <text>Good Job! You made</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Lato,-32,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>278</x>
-                        <y>79</y>
-                        <z>0</z>
-                        <width>477</width>
-                        <height>75</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="burgers_text" uid="80">
-                    <properties>
-                        <text>burgers</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Lato,-32,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>373</x>
-                        <y>195</y>
-                        <z>0</z>
-                        <width>120</width>
-                        <height>59</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="chef_button" uid="81">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>439</x>
-                        <y>356</y>
-                        <z>0</z>
-                        <width>441</width>
-                        <height>311</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="chef_back2town_text" uid="82">
-                    <properties>
-                        <text>Back to Town</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Lato,-32,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>335</x>
-                        <y>325</y>
-                        <z>0</z>
-                        <width>238</width>
-                        <height>65</height>
+                        <width>274</width>
+                        <height>58</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

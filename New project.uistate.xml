@@ -11,11 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Town</layout>
-        <layout order="2">Chef_Story</layout>
-        <layout active="1" order="4">Chef_game</layout>
+        <layout order="2">Pilot_Story</layout>
+        <layout order="4">Pilot_game</layout>
         <event-sheet order="1">Town</event-sheet>
-        <event-sheet order="3">C_story</event-sheet>
-        <event-sheet order="5">C_game</event-sheet>
+        <event-sheet active="1" order="3">Pi_story</event-sheet>
+        <event-sheet order="5">Pi_game</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -47,13 +47,42 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/kitchen_background/" />
         <folder expanded="1" path="animation-folder/chef/" />
         <folder expanded="1" path="animation-folder/speech_bubble_chef/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/RestaurantBuilding/" />
         <folder expanded="1" path="animation-folder/x/" />
         <folder expanded="1" path="animation-folder/chef_game_background/" />
         <folder expanded="1" path="animation-folder/burger/" />
         <folder expanded="1" path="animation-folder/lettuce/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/patty/" />
+        <folder expanded="1" path="animation-folder/dead_zone/" />
+        <folder expanded="1" path="animation-folder/police_Story_background/" />
+        <folder expanded="1" path="animation-folder/police/" />
+        <folder expanded="1" path="animation-folder/police_dialogue/" />
+        <folder expanded="1" path="animation-folder/police_game_bg/" />
+        <folder expanded="1" path="animation-folder/police_building1/" />
+        <folder expanded="1" path="animation-folder/police_building2/" />
+        <folder expanded="1" path="animation-folder/police_car1/" />
+        <folder expanded="1" path="animation-folder/police_car2/" />
+        <folder expanded="1" path="animation-folder/thief1/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/police_done/" />
+        <folder expanded="1" path="animation-folder/home_button/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/TopBun/" />
+        <folder expanded="1" path="animation-folder/chef_done_menu/" />
+        <folder expanded="1" path="animation-folder/chef_button/" />
+        <folder expanded="1" path="animation-folder/airport_background/" />
+        <folder expanded="1" path="animation-folder/pilot/" />
+        <folder expanded="1" path="animation-folder/pilot_speech_bubble/" />
+        <folder expanded="1" path="animation-folder/plane/" />
+        <folder expanded="1" path="animation-folder/cloud1/" />
+        <folder expanded="1" path="animation-folder/cloud2/" />
+        <folder expanded="1" path="animation-folder/cloud_dead_zone/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/pilot_menu/" />
+        <folder expanded="1" path="animation-folder/pilot_end_button/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
     </folders-expanded>
 </c2uistate>

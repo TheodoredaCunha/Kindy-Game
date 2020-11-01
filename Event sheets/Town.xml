@@ -3,34 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Town</name>
     <events>
-        <variable constant="0" name="chosen" sid="709721481050186" static="0" type="text">&quot;Town&quot;</variable>
-        <event-block sid="639208046290525">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="179000756028476" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">FireStationBuilding</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="605884610542616" type="button">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="945918363496360" type="button_text">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="0" name="Set text" sid="683142801769944" type="button_text">
-                    <param id="0" name="Text">&quot;Play Firefighter Game&quot;</param>
-                </action>
-                <action id="-15" name="Set visible" sid="911894442526617" type="x">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="650192980543959" type="System">
-                    <param id="0" name="Variable">chosen</param>
-                    <param id="1" name="Value">&quot;Firefighter_Story&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <variable constant="0" name="chosen" sid="709721481050186" static="0" type="text">Town</variable>
         <event-block sid="568880527105216">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="841205441322183" type="System" />
@@ -63,12 +36,39 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="639208046290525">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="179000756028476" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">FireStationBuilding</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="643963088004574" type="button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="201554123939640" type="button_text">
+                    <param id="0" name="Text">&quot;Play Firefighter Game&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="949758147673120" type="button_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="519531767901824" type="x">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="650192980543959" type="System">
+                    <param id="0" name="Variable">chosen</param>
+                    <param id="1" name="Value">&quot;Firefighter_Story&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="159708745776969">
             <conditions>
                 <condition id="6" name="On object clicked" sid="681705620999457" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite3</param>
+                    <param id="2" name="Object clicked">RestaurantBuilding</param>
                 </condition>
             </conditions>
             <actions>
@@ -85,11 +85,68 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-2" name="Set Y" sid="495745321014979" type="button_text">
-                    <param id="0" name="Y">230</param>
+                    <param id="0" name="Y">190</param>
                 </action>
                 <action id="-9" name="Set value" sid="834777645965885" type="System">
                     <param id="0" name="Variable">chosen</param>
                     <param id="1" name="Value">&quot;Chef_Story&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="329466022379493">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="451216810947862" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="810930856345308" type="button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="640800224700016" type="button_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="332490510210831" type="button_text">
+                    <param id="0" name="Text">&quot;Play Police Game&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="197106957254886" type="x">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="641609805974318" type="button_text">
+                    <param id="0" name="Y">150</param>
+                </action>
+                <action id="-9" name="Set value" sid="977916465255011" type="System">
+                    <param id="0" name="Variable">chosen</param>
+                    <param id="1" name="Value">&quot;Police_Story&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="454119698623387">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="411904029001290" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="601194634320485" type="button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="516276589234037" type="button_text">
+                    <param id="0" name="Text">&quot;Play Pilot Game&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="384253865277109" type="button_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="660517001645055" type="x">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="294890376918271" type="System">
+                    <param id="0" name="Variable">chosen</param>
+                    <param id="1" name="Value">&quot;Pilot_Story&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -110,6 +167,10 @@
                 </action>
                 <action id="-15" name="Set visible" sid="716483790759049" type="x">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="575625950622353" type="System">
+                    <param id="0" name="Variable">chosen</param>
+                    <param id="1" name="Value">&quot;Town&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>P_Story</name>
+    <events>
+        <variable constant="0" name="dialogue3" sid="581300136010080" static="0" type="number">0</variable>
+        <event-block sid="888074600099703">
+            <conditions>
+                <condition id="0" name="On click" sid="462764951556699" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="901691663274826" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455522148624436">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="215327523219186" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="304754750194765" type="police_dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="435814463468810" type="police_dialogue_text">
+                    <param id="0" name="Text">&quot;I am a policeman&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="356560269933778" type="police_dialogue_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="130235037498439">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="711267002046524" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="255870085598653" type="police_dialogue_text">
+                    <param id="0" name="Text">&quot;I work in a police station&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="577107218001364">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="612715750589511" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="257691683218896" type="police_dialogue_text">
+                    <param id="0" name="Text">&quot;I catch criminals&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="283304309338697">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="250175299976256" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="170857353677161" type="police_dialogue_text">
+                    <param id="0" name="Text">&quot;Can you help me?&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="771690695806023">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="901890170921176" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="611949332763062" type="System">
+                    <param id="0" name="Layout">&quot;Police_game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

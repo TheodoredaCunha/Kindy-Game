@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Pi_game</name>
+    <events>
+        <variable constant="0" name="pilot_score" sid="116389141984717" static="0" type="number">0</variable>
+        <variable constant="0" name="lives" sid="505105236661852" static="0" type="number">3</variable>
+        <variable constant="0" name="cloud_counter" sid="500990318718934" static="0" type="number">0</variable>
+        <variable constant="0" name="gravity" sid="108387807671652" static="0" type="number">4</variable>
+        <event-block sid="948679133414327">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="134569156535898" type="System">
+                    <param id="0" name="Interval (seconds)">0.01</param>
+                </condition>
+                <condition id="2" inverted="1" name="Mouse button is down" sid="491291821833386" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="627689841234240" type="plane">
+                    <param id="0" name="Y">plane.Y + gravity</param>
+                </action>
+                <action id="-8" name="Set angle" sid="573972711781696" type="plane">
+                    <param id="0" name="Angle">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="129471760658290">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="185823608073521" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="988831690424361" type="plane">
+                    <param id="0" name="Y">plane.Y + (gravity + 1) * -1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="150532733767500" type="plane">
+                    <param id="0" name="Angle">-20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="711769945175488">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="889371255054889" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="807353692053983">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="254245342409108" type="System">
+                            <param id="0" name="Variable">cloud_counter</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="593741355479741" type="cloud1">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="170422751788321">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="834269728106446" type="System">
+                            <param id="0" name="Variable">cloud_counter</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="156639638516260" type="cloud2">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="377437439743358">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="297759084443539" type="cloud1">
+                    <param id="0" name="Object">cloud_dead_zone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="375341535422499" type="System">
+                    <param id="0" name="Variable">cloud_counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="497958539039877" type="cloud1">
+                    <param id="0" name="X">941</param>
+                    <param id="1" name="Y">random(30, 500)</param>
+                </action>
+                <action id="-10" name="Add to" sid="796262694040033" type="System">
+                    <param id="0" name="Variable">pilot_score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="667179007048680" type="pilot_score_text">
+                    <param id="0" name="Text">pilot_score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="261904292027388">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="795447301528820" type="cloud2">
+                    <param id="0" name="Object">cloud_dead_zone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="299515171437806" type="System">
+                    <param id="0" name="Variable">cloud_counter</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-3" name="Set position" sid="998555821479697" type="cloud2">
+                    <param id="0" name="X">1100</param>
+                    <param id="1" name="Y">random(30, 500)</param>
+                </action>
+                <action id="-10" name="Add to" sid="817999808587237" type="System">
+                    <param id="0" name="Variable">pilot_score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="838170717670493" type="pilot_score_text">
+                    <param id="0" name="Text">pilot_score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="255906745595145">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="266252952956828" type="plane">
+                    <param id="0" name="Object">cloud_dead_zone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="264496059131377" type="System">
+                    <param id="0" name="Variable">lives</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="244586578310034">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="599400394501626" type="plane">
+                    <param id="0" name="Object">cloud1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="177810027720659" type="System">
+                    <param id="0" name="Variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="360017059061407" type="pilot_lives_text">
+                    <param id="0" name="Text">lives</param>
+                </action>
+                <action id="-3" name="Set position" sid="696783592864313" type="cloud1">
+                    <param id="0" name="X">941</param>
+                    <param id="1" name="Y">random(30, 500)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="917572058656156">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="475568758492071" type="plane">
+                    <param id="0" name="Object">cloud2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="230952794268239" type="System">
+                    <param id="0" name="Variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="745743896042362" type="System">
+                    <param id="0" name="Variable">pilot_score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="136760220537429" type="pilot_lives_text">
+                    <param id="0" name="Text">lives</param>
+                </action>
+                <action id="0" name="Set text" sid="883675569002654" type="pilot_score_text">
+                    <param id="0" name="Text">pilot_score</param>
+                </action>
+                <action id="-3" name="Set position" sid="777863831546786" type="cloud2">
+                    <param id="0" name="X">1100</param>
+                    <param id="1" name="Y">random(30, 500)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="909152612698332">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="675886712256538" type="System">
+                    <param id="0" name="Variable">lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="459053526165172" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="443546743584691" type="pilot_end_button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="487400984442022" type="pilot_menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="426987498479623" type="pilot_goodJob_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="172489100740513" type="pilot_back2town">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="911439705270252">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="320480260643963" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pilot_end_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="787957284421584" type="System">
+                            <param id="0" name="Layout">&quot;Town&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

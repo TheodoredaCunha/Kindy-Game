@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>P_game</name>
+    <events>
+        <variable constant="0" name="police_game_timer" sid="408338889138250" static="0" type="number">60</variable>
+        <variable constant="0" name="score" sid="670706449110425" static="0" type="number">0</variable>
+        <variable constant="0" name="thief_delay" sid="882736877224565" static="0" type="number">2</variable>
+        <variable constant="0" name="random_thief" sid="469792461465069" static="0" type="number">0</variable>
+        <event-block sid="103713672302857">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="965362212089340" type="System">
+                    <param id="0" name="Interval (seconds)">thief_delay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="125231256175562" type="System">
+                    <param id="0" name="Variable">random_thief</param>
+                    <param id="1" name="Value">int(random(1, 6))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="905632345334249">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="758749809799867" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="100307818117761" type="thief1">
+                            <param id="0" name="X">149</param>
+                            <param id="1" name="Y">317</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="239716994534027">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="480353567364699" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="847510395232408" type="thief1">
+                            <param id="0" name="X">373</param>
+                            <param id="1" name="Y">319</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="308590110222475">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="651712636799267" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="997810233380003" type="thief1">
+                            <param id="0" name="X">511</param>
+                            <param id="1" name="Y">321</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453546408632326">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="433961809051515" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="248045889013305" type="thief1">
+                            <param id="0" name="X">746</param>
+                            <param id="1" name="Y">323</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="869429654468632">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="575961051280981" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="595881058773495" type="thief1">
+                            <param id="0" name="X">261</param>
+                            <param id="1" name="Y">85</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="441193643045380">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="384206957974199" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="599508203589628" type="thief1">
+                            <param id="0" name="X">626</param>
+                            <param id="1" name="Y">82</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="176271357809923">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="324441735030884" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">thief1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="379028727519176" type="thief1">
+                    <param id="0" name="Y">-100</param>
+                </action>
+                <action id="-10" name="Add to" sid="352697963895648" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="570922613825827" type="police_game_score">
+                    <param id="0" name="Text">score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922539109004597">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="166275728124540" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">home_button</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="318320471907476" type="home_button" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="852555485174801" type="System">
+                    <param id="0" name="Layout">&quot;Town&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="906260376549369">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="823205988691388" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="132795610098683" type="System">
+                    <param id="0" name="Variable">random_thief</param>
+                    <param id="1" name="Value">int(random(1, 6))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="742501798176502">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="796766007185448" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="441568021224787" type="thief1">
+                            <param id="0" name="X">149</param>
+                            <param id="1" name="Y">317</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="484717601837042">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="862231993797065" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="590160186622339" type="thief1">
+                            <param id="0" name="X">373</param>
+                            <param id="1" name="Y">319</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="437441677492200">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="218784359164223" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="616611504779319" type="thief1">
+                            <param id="0" name="X">511</param>
+                            <param id="1" name="Y">321</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="723312969284353">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="278209650610909" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="982110531231685" type="thief1">
+                            <param id="0" name="X">746</param>
+                            <param id="1" name="Y">323</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="543365515773227">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="653848132722328" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="481368105056884" type="thief1">
+                            <param id="0" name="X">261</param>
+                            <param id="1" name="Y">85</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="290087295363556">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="603927952606748" type="System">
+                            <param id="0" name="Variable">random_thief</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="412195818116054" type="thief1">
+                            <param id="0" name="X">626</param>
+                            <param id="1" name="Y">82</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="604166225065698">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="116667897083981" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="622496362980995" type="System">
+                    <param id="0" name="Variable">police_game_timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="463267135050432" type="police_timer_text">
+                    <param id="0" name="Text">police_game_timer</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="644939744321183">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="379506129171792" type="System">
+                            <param id="0" name="Variable">police_game_timer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="468715500918262" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="550792887436009" type="police_done">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="682965401689214" type="police_good_job">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="854246711802194" type="home_button">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="755364547571977" type="back2town">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
