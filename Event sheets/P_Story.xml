@@ -10,6 +10,14 @@
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="412810342130243" type="System">
+                    <param id="0" name="Variable">isPaused</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="756371115045626" type="Mouse">
+                    <param id="0" name="Object">police_pause</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="901691663274826" type="System">
@@ -91,6 +99,101 @@
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="611949332763062" type="System">
                     <param id="0" name="Layout">&quot;Police_game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="475031991337517">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="968615773398479" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">police_pause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="693146939119744" type="System">
+                    <param id="0" name="Variable">isPaused</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="154919607903355" type="police_story_menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="982087719372595" type="police_back">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="405519510835146" type="police_resume">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="884987633163177" type="police_options_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="891774869962903">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="424793593690148" type="System">
+                    <param id="0" name="Variable">isPaused</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="302158602265520">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="464611810775961" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">police_resume</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="830290357745815" type="System">
+                            <param id="0" name="Variable">isPaused</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="429017157827816" type="police_story_menu">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="531134820643340" type="police_back">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="931249616565399" type="police_resume">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="457675978606892" type="police_options_text">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="783000428014290">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="720248835939156" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">police_back</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="695600799940745" type="System">
+                            <param id="0" name="Variable">isPaused</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="974068352920943" type="System">
+                            <param id="0" name="Layout">&quot;Town&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="419218144692968">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="965295911400233" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="458278370096323" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

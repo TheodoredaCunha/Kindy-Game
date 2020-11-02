@@ -23,6 +23,14 @@
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="158929491278141" type="System">
+                    <param id="0" name="Variable">isPaused</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="991949293610906" type="Mouse">
+                    <param id="0" name="Object">firefighter_pause</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="172328436876875" type="System">
@@ -107,6 +115,101 @@
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="854951846224711" type="System">
                     <param id="0" name="Layout">&quot;Firefighter_game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="281472109707566">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="983746845179627" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">firefighter_pause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="329550871903397" type="System">
+                    <param id="0" name="Variable">isPaused</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="780041551299451" type="firefighter_resume">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="245982663791399" type="firefighter_back">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="514729947547057" type="firefighter_options_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="779099302897009" type="firefighter_story_menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="134075268373235">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="188479661785385" type="System">
+                    <param id="0" name="Variable">isPaused</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="894337413894195">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="890236717275672" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">firefighter_resume</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="137113162548450" type="System">
+                            <param id="0" name="Variable">isPaused</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="869120988522331" type="firefighter_resume">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="925533603414367" type="firefighter_back">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="351136696852511" type="firefighter_options_text">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="477401710570512" type="firefighter_story_menu">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="297584432871402">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="250903982450197" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">firefighter_back</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="949709489775075" type="System">
+                            <param id="0" name="Variable">isPaused</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="617560683970443" type="System">
+                            <param id="0" name="Layout">&quot;Town&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="387553596915515">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="641551042527116" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="664171331948442" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
