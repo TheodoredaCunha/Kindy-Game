@@ -167,6 +167,21 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="999989900873796">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="380803070133701" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">button_home</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="579144453099766" type="button_home" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="887529642601343" type="System">
+                    <param id="0" name="Layout">Town</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="343450093789335">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="223401849934711" type="System">
@@ -195,9 +210,6 @@
                         <action id="-13" name="Set time scale" sid="258950335420936" type="System">
                             <param id="0" name="Time scale">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="422947813200485" type="congrats">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="404685318266161" type="congratulations_text">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -213,25 +225,71 @@
                         <action id="-15" name="Set visible" sid="637017783676493" type="Go_Back">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="589586379187183" type="ff_game_menu">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="999989900873796">
-                            <conditions>
-                                <condition id="6" name="On object clicked" sid="380803070133701" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">button_home</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="887529642601343" type="System">
-                                    <param id="0" name="Layout">Town</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="583134470332833">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="565957896361109" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ff_game_pause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="716198328308760" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="264800689891844" type="button_home">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="279339276279663" type="Go_Back">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="725656119110756" type="ff_resume_button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="360725294049904" type="ff_resume_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="941571898798039" type="ff_game_menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="200499239963826">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="701021697811416" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ff_resume_button</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="484305527634617" type="ff_resume_button" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="317162311193054" type="button_home">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="448492826570912" type="Go_Back">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="855059037542583" type="ff_resume_button">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="950293601599975" type="ff_resume_text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="342899416786245" type="ff_game_menu">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="254263730887390" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

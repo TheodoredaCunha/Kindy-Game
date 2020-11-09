@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>C_game</name>
     <events>
+        <variable constant="0" name="isPaused_chef" sid="170700805462113" static="0" type="number">0</variable>
         <variable constant="0" name="chef_burgers_made" sid="933476082770318" static="0" type="number">0</variable>
         <variable constant="0" name="chef_game_score" sid="646627515263404" static="0" type="number">0</variable>
         <variable constant="0" name="lives_chef" sid="747813514460805" static="0" type="number">5</variable>
@@ -208,6 +209,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">10</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="922801136044551" type="System">
+                            <param id="0" name="Variable">isPaused_chef</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-23" name="Move at angle" sid="362552603618771" type="lettuce">
@@ -227,6 +233,11 @@
                             <param id="0" name="Variable">chef_game_score</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">10</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="592145363545395" type="System">
+                            <param id="0" name="Variable">isPaused_chef</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -507,6 +518,100 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="160160218040472">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="663913342221007" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">chef_game_pause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="905674033805115" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="399654465935573" type="System">
+                    <param id="0" name="Variable">isPaused_chef</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="984769564868619" type="chef_done_menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="514082290665642" type="chef_button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="587081340137983" type="chef_game_resume_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="818971936817249" type="chef_game_resume_button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="639419113717299" type="chef_back2town_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="456599780958102" type="lettuce">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="994481074516093" type="patty">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="811228269894712">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="811628840253225" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">chef_game_resume_button</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="515087240289263" type="chef_game_resume_button" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="658884628567723" type="chef_done_menu">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="236249688436577" type="chef_button">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="923691335672841" type="chef_game_resume_button">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="868743921269577" type="chef_game_resume_text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="237119821703916" type="chef_back2town_text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="737390469148844" type="lettuce">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="962322964397210" type="patty">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="860132943127596" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="778765618605459" type="System">
+                    <param id="0" name="Variable">isPaused_chef</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="508513358028155">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="425847213432638" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">chef_button</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="271099202269881" type="chef_button" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="354193611251333" type="System">
+                    <param id="0" name="Layout">&quot;Town&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
