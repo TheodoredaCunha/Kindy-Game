@@ -326,10 +326,6 @@
         <object-type name="button_text" sid="574802619786060">
             <plugin id="Text" />
         </object-type>
-        <object-type name="congrats" sid="719034387257369">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="congratulations_text" sid="861409465020839">
             <plugin id="Text" />
         </object-type>
@@ -692,7 +688,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914819614851693" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\menu.png">
+                        <collision-poly>
+                            <point x="0.138542" y="0.184722" />
+                            <point x="0.5" y="0.0430556" />
+                            <point x="0.885417" y="0.152778" />
+                            <point x="0.885417" y="0.5" />
+                            <point x="0.860417" y="0.813889" />
+                            <point x="0.5" y="0.847222" />
+                            <point x="0.153125" y="0.795833" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -776,7 +782,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599142125511947" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\menu.png">
+                        <collision-poly>
+                            <point x="0.138542" y="0.184722" />
+                            <point x="0.5" y="0.0430556" />
+                            <point x="0.885417" y="0.152778" />
+                            <point x="0.885417" y="0.5" />
+                            <point x="0.860417" y="0.813889" />
+                            <point x="0.5" y="0.847222" />
+                            <point x="0.153125" y="0.795833" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -938,7 +954,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656776797993741" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\menu.png">
+                        <collision-poly>
+                            <point x="0.138542" y="0.184722" />
+                            <point x="0.5" y="0.0430556" />
+                            <point x="0.885417" y="0.152778" />
+                            <point x="0.885417" y="0.5" />
+                            <point x="0.860417" y="0.813889" />
+                            <point x="0.5" y="0.847222" />
+                            <point x="0.153125" y="0.795833" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1085,7 +1111,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108937215333175" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\menu.png">
+                        <collision-poly>
+                            <point x="0.138542" y="0.184722" />
+                            <point x="0.5" y="0.0430556" />
+                            <point x="0.885417" y="0.152778" />
+                            <point x="0.885417" y="0.5" />
+                            <point x="0.860417" y="0.813889" />
+                            <point x="0.5" y="0.847222" />
+                            <point x="0.153125" y="0.795833" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1299,6 +1335,202 @@
         </object-type>
         <object-type name="police_options_text" sid="294334550148325">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="ff_game_pause" sid="486906677196645">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947840126810222" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\pause.png">
+                        <collision-poly>
+                            <point x="0.289583" y="0.386111" />
+                            <point x="0.5" y="0.154167" />
+                            <point x="0.666667" y="0.444444" />
+                            <point x="0.666667" y="0.555556" />
+                            <point x="0.5" y="0.697222" />
+                            <point x="0.289583" y="0.613889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="581367233306110">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120404558877106" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_home2" sid="701453436052546">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247391141737597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\button.png">
+                        <collision-poly>
+                            <point x="0.172917" y="0.230556" />
+                            <point x="0.5" y="0.230556" />
+                            <point x="0.803125" y="0.2625" />
+                            <point x="0.803125" y="0.5" />
+                            <point x="0.7875" y="0.716667" />
+                            <point x="0.2125" y="0.716667" />
+                            <point x="0.170833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ff_resume_button" sid="600628971583398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845512469516345" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\button.png">
+                        <collision-poly>
+                            <point x="0.172917" y="0.230556" />
+                            <point x="0.5" y="0.230556" />
+                            <point x="0.803125" y="0.2625" />
+                            <point x="0.803125" y="0.5" />
+                            <point x="0.7875" y="0.716667" />
+                            <point x="0.2125" y="0.716667" />
+                            <point x="0.170833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ff_resume_text" sid="296271279373629">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="chef_game_pause" sid="978742511255188">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530595057483174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\pause.png">
+                        <collision-poly>
+                            <point x="0.289583" y="0.386111" />
+                            <point x="0.5" y="0.154167" />
+                            <point x="0.666667" y="0.444444" />
+                            <point x="0.666667" y="0.555556" />
+                            <point x="0.5" y="0.697222" />
+                            <point x="0.289583" y="0.613889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chef_game_resume_button" sid="287729004946509">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310323068749131" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\button.png">
+                        <collision-poly>
+                            <point x="0.172917" y="0.230556" />
+                            <point x="0.5" y="0.230556" />
+                            <point x="0.803125" y="0.2625" />
+                            <point x="0.803125" y="0.5" />
+                            <point x="0.7875" y="0.716667" />
+                            <point x="0.2125" y="0.716667" />
+                            <point x="0.170833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chef_game_resume_text" sid="630405071665680">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="police_game_pause_button" sid="383680605787876">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147398811172263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\pause.png">
+                        <collision-poly>
+                            <point x="0.289583" y="0.386111" />
+                            <point x="0.5" y="0.154167" />
+                            <point x="0.666667" y="0.444444" />
+                            <point x="0.666667" y="0.555556" />
+                            <point x="0.5" y="0.697222" />
+                            <point x="0.289583" y="0.613889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="police_game_resume_button" sid="752620408355668">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="840771450190189" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\button.png">
+                        <collision-poly>
+                            <point x="0.172917" y="0.230556" />
+                            <point x="0.5" y="0.230556" />
+                            <point x="0.803125" y="0.2625" />
+                            <point x="0.803125" y="0.5" />
+                            <point x="0.7875" y="0.716667" />
+                            <point x="0.2125" y="0.716667" />
+                            <point x="0.170833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="police_game_resume_text" sid="298188263932755">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="pilot_game_pause_button" sid="272452423238248">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="450659377820798" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\pause.png">
+                        <collision-poly>
+                            <point x="0.289583" y="0.386111" />
+                            <point x="0.5" y="0.154167" />
+                            <point x="0.666667" y="0.444444" />
+                            <point x="0.666667" y="0.555556" />
+                            <point x="0.5" y="0.697222" />
+                            <point x="0.289583" y="0.613889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pilot_game_resume_button" sid="944849563456727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296024113947458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\button.png">
+                        <collision-poly>
+                            <point x="0.172917" y="0.230556" />
+                            <point x="0.5" y="0.230556" />
+                            <point x="0.803125" y="0.2625" />
+                            <point x="0.803125" y="0.5" />
+                            <point x="0.7875" y="0.716667" />
+                            <point x="0.2125" y="0.716667" />
+                            <point x="0.170833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pilot_game_resume_text" sid="954167723263266">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ff_game_menu" sid="186287018266535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290751939127196" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Theodore da Cunha\Desktop\binus\Kindy Game\Art\general\menu.png">
+                        <collision-poly>
+                            <point x="0.138542" y="0.184722" />
+                            <point x="0.5" y="0.0430556" />
+                            <point x="0.885417" y="0.152778" />
+                            <point x="0.885417" y="0.5" />
+                            <point x="0.860417" y="0.813889" />
+                            <point x="0.5" y="0.847222" />
+                            <point x="0.153125" y="0.795833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

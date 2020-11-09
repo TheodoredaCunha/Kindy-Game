@@ -11,10 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Town</layout>
-        <layout order="2">Police_Story</layout>
-        <layout active="1" order="4">Chef_Story</layout>
+        <layout order="2">Firefighter_game</layout>
+        <layout order="4">Pilot_game</layout>
         <event-sheet order="1">Town</event-sheet>
-        <event-sheet order="3">P_Story</event-sheet>
+        <event-sheet order="3">FF_game</event-sheet>
+        <event-sheet active="1" order="5">Pi_game</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -102,5 +103,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/police_story_menu/" />
         <folder expanded="1" path="animation-folder/police_resume/" />
         <folder expanded="1" path="animation-folder/police_back/" />
+        <folder expanded="1" path="animation-folder/ff_game_pause/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/button_home2/" />
+        <folder expanded="1" path="animation-folder/ff_resume_button/" />
+        <folder expanded="1" path="animation-folder/chef_game_pause/" />
+        <folder expanded="1" path="animation-folder/chef_game_resume_button/" />
+        <folder expanded="1" path="animation-folder/police_game_pause_button/" />
+        <folder expanded="1" path="animation-folder/police_game_resume_button/" />
+        <folder expanded="1" path="animation-folder/pilot_game_pause_button/" />
+        <folder expanded="1" path="animation-folder/pilot_game_resume_button/" />
+        <folder expanded="1" path="animation-folder/ff_game_menu/" />
     </folders-expanded>
 </c2uistate>
