@@ -13,9 +13,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Town</layout>
         <layout order="2">Firefighter_game</layout>
         <layout order="4">Pilot_game</layout>
-        <event-sheet order="1">Town</event-sheet>
+        <event-sheet active="1" order="1">Town</event-sheet>
         <event-sheet order="3">FF_game</event-sheet>
-        <event-sheet active="1" order="5">Pi_game</event-sheet>
+        <event-sheet order="5">Pi_game</event-sheet>
+        <event-sheet order="6">C_game</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,12 +26,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
-        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/ft/" />
         <folder expanded="1" path="animation-folder/building1/" />
@@ -64,7 +65,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/police_car1/" />
         <folder expanded="1" path="animation-folder/police_car2/" />
         <folder expanded="1" path="animation-folder/thief1/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/PoliceStationBuilding/" />
         <folder expanded="1" path="animation-folder/police_done/" />
         <folder expanded="1" path="animation-folder/home_button/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
@@ -83,7 +84,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/pilot_menu/" />
         <folder expanded="1" path="animation-folder/pilot_end_button/" />
-        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/AirportBuilding/" />
         <folder expanded="1" path="animation-folder/pilot_pause/" />
         <folder expanded="1" path="animation-folder/pilot_story_menu/" />
         <folder expanded="1" path="animation-folder/pilot_back/" />
@@ -114,5 +115,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pilot_game_pause_button/" />
         <folder expanded="1" path="animation-folder/pilot_game_resume_button/" />
         <folder expanded="1" path="animation-folder/ff_game_menu/" />
+        <folder expanded="1" path="animation-folder/music_button/" />
     </folders-expanded>
 </c2uistate>
