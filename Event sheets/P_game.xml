@@ -360,5 +360,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="308046052399180">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="418178325367228" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="380803428585948" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

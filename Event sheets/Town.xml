@@ -20,6 +20,22 @@
                 </action>
                 <action id="-24" name="Move to top" sid="418509371317884" type="x" />
             </actions>
+            <sub-events>
+                <event-block sid="913215774166643">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="950043638226516" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="810861653876424" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;music&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="265312723970717">
             <conditions>
@@ -98,7 +114,7 @@
                 <condition id="6" name="On object clicked" sid="451216810947862" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite3</param>
+                    <param id="2" name="Object clicked">PoliceStationBuilding</param>
                 </condition>
             </conditions>
             <actions>
@@ -128,7 +144,7 @@
                 <condition id="6" name="On object clicked" sid="411904029001290" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite9</param>
+                    <param id="2" name="Object clicked">AirportBuilding</param>
                 </condition>
             </conditions>
             <actions>
@@ -171,6 +187,50 @@
                 <action id="-9" name="Set value" sid="575625950622353" type="System">
                     <param id="0" name="Variable">chosen</param>
                     <param id="1" name="Value">&quot;Town&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="364199796746706">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="680421995743560" type="music_button">
+                    <param id="0" name="Instance variable">isMuted</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set master volume" sid="810392130341221" type="Audio">
+                    <param id="0" name="dB">-60</param>
+                </action>
+                <action id="5" name="Set frame" sid="648260915093774" type="music_button">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="381720476926724">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="251461355249411" type="music_button">
+                    <param id="0" name="Instance variable">isMuted</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set master volume" sid="770192437389767" type="Audio">
+                    <param id="0" name="dB">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="975159836773804" type="music_button">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="217446813336113">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="648073674578452" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">music_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-14" name="Toggle boolean" sid="920475577916460" type="music_button">
+                    <param id="0" name="Instance variable">isMuted</param>
                 </action>
             </actions>
         </event-block>

@@ -154,11 +154,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>425</x>
-                        <y>233</y>
+                        <x>438</x>
+                        <y>269</y>
                         <z>0</z>
-                        <width>396</width>
-                        <height>452</height>
+                        <width>681</width>
+                        <height>572</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -176,8 +176,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>430</x>
-                        <y>135</y>
+                        <x>457</x>
+                        <y>138</y>
                         <z>0</z>
                         <width>444</width>
                         <height>370</height>
@@ -198,8 +198,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>435</x>
-                        <y>349</y>
+                        <x>462</x>
+                        <y>352</y>
                         <z>0</z>
                         <width>444</width>
                         <height>370</height>
@@ -225,8 +225,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>325</x>
-                        <y>90</y>
+                        <x>352</x>
+                        <y>93</y>
                         <z>0</z>
                         <width>225</width>
                         <height>71</height>
@@ -252,8 +252,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>327</x>
-                        <y>314</y>
+                        <x>354</x>
+                        <y>317</y>
                         <z>0</z>
                         <width>225</width>
                         <height>71</height>
