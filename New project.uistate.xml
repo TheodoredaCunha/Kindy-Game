@@ -11,12 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Town</layout>
-        <layout order="2">Firefighter_game</layout>
-        <layout order="4">Pilot_game</layout>
-        <event-sheet active="1" order="1">Town</event-sheet>
-        <event-sheet order="3">FF_game</event-sheet>
-        <event-sheet order="5">Pi_game</event-sheet>
-        <event-sheet order="6">C_game</event-sheet>
+        <layout order="3">LandingPage</layout>
+        <layout order="4">Credits</layout>
+        <event-sheet order="1">Town</event-sheet>
+        <event-sheet order="2">FF_game</event-sheet>
+        <event-sheet order="5">LandingPage</event-sheet>
+        <event-sheet active="1" order="6">Credits</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -116,5 +116,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pilot_game_resume_button/" />
         <folder expanded="1" path="animation-folder/ff_game_menu/" />
         <folder expanded="1" path="animation-folder/music_button/" />
+        <folder expanded="1" path="animation-folder/town_grass/" />
+        <folder expanded="1" path="animation-folder/Title/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/Quit/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/ToGame_Credits/" />
+        <folder expanded="1" path="animation-folder/CreditsButton/" />
     </folders-expanded>
 </c2uistate>
