@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LandingPage</name>
+    <events>
+        <event-block sid="712051012490199">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="373825634883462" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="127988953038445" type="System">
+                    <param id="0" name="Layout">Town</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="270533306966702">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="169719295281536" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">CreditsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="432106776799878" type="System">
+                    <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

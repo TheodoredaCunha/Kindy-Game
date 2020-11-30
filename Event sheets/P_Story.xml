@@ -88,12 +88,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="494564294302651">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="516337193119102" type="System">
+                    <param id="0" name="Variable">dialogue3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="138947430638372" type="police_dialogue_text">
+                    <param id="0" name="Y">50</param>
+                </action>
+                <action id="0" name="Set text" sid="716275099652947" type="police_dialogue_text">
+                    <param id="0" name="Text">&quot;Click on the thief to catch the thief&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="771690695806023">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="901890170921176" type="System">
                     <param id="0" name="Variable">dialogue3</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">5</param>
+                    <param id="2" name="Value">6</param>
                 </condition>
             </conditions>
             <actions>

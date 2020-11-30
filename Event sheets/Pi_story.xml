@@ -107,12 +107,87 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="333177162520446">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="772403983358615" type="System">
+                    <param id="0" name="Variable">dialogue4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="980391144838276" type="pilot_speech_bubble">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="416772213820492" type="pilot_dialogue">
+                    <param id="0" name="Y">50</param>
+                </action>
+                <action id="0" name="Set text" sid="149447038077329" type="pilot_dialogue">
+                    <param id="0" name="Text">&quot;Left Click to make the plane fly up&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="733730136929725" type="pilot_dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="946626392791552">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="441706104976849" type="System">
+                    <param id="0" name="Variable">dialogue4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="156745878345897" type="pilot_speech_bubble">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="812322198918456" type="pilot_dialogue">
+                    <param id="0" name="Y">70</param>
+                </action>
+                <action id="-1" name="Set X" sid="459625822014096" type="pilot_dialogue">
+                    <param id="0" name="X">450</param>
+                </action>
+                <action id="0" name="Set text" sid="783293671089623" type="pilot_dialogue">
+                    <param id="0" name="Text">&quot;Avoid the clouds&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="906955220204045" type="pilot_dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="760258815018976">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="358816176684389" type="System">
+                    <param id="0" name="Variable">dialogue4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="798066789825491" type="pilot_speech_bubble">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="340140573532915" type="pilot_dialogue">
+                    <param id="0" name="Y">70</param>
+                </action>
+                <action id="-1" name="Set X" sid="963050326718124" type="pilot_dialogue">
+                    <param id="0" name="X">420</param>
+                </action>
+                <action id="0" name="Set text" sid="916950574036276" type="pilot_dialogue">
+                    <param id="0" name="Text">&quot;But don&apos;t fly to low&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="405897145121771" type="pilot_dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="615469091253164">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="519000714836630" type="System">
                     <param id="0" name="Variable">dialogue4</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">5</param>
+                    <param id="2" name="Value">8</param>
                 </condition>
             </conditions>
             <actions>

@@ -239,6 +239,11 @@
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">ff_game_pause</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="532704111690677" type="timer">
+                    <param id="0" name="Instance variable">time_left</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-13" name="Set time scale" sid="716198328308760" type="System">

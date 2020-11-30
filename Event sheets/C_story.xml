@@ -126,12 +126,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="671258971639059">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="368014377155147" type="System">
+                    <param id="0" name="Variable">dialogue2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="830720900632089" type="speech_bubble_chef">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="3" name="Set font size" sid="299474275736186" type="Chef_Dialogue">
+                    <param id="0" name="Size (pt)">17</param>
+                </action>
+                <action id="0" name="Set text" sid="531945037745662" type="Chef_Dialogue">
+                    <param id="0" name="Text">&quot;Move the mouse to catch the ingredients&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="928930296903551" type="Chef_Dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="820380199914373">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="453723413030378" type="System">
                     <param id="0" name="Variable">dialogue2</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">5</param>
+                    <param id="2" name="Value">6</param>
                 </condition>
             </conditions>
             <actions>

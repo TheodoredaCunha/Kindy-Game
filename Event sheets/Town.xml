@@ -234,5 +234,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="885546793716373">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="292964975873932" type="town_grass">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="221095351329888" type="town_grass">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="866113475782406">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="301996804386914" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="747720910889375" type="System">
+                    <param id="0" name="Layout">LandingPage</param>
+                </action>
+                <action id="-14" name="Toggle boolean" sid="161214100679301" type="music_button">
+                    <param id="0" name="Instance variable">isMuted</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
